@@ -25,6 +25,8 @@ h2 {
     text-transform: uppercase;
 }
 
+
+
 /* Apply styles */
 
 .form-column {
@@ -45,10 +47,28 @@ h2 {
     min-height: 75px;
 }
 
+.success {
+    color: lawngreen;
+}
+
 /* Highlight styles */
 .gallery_product {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.highlight-body {
+    height: 100px;
+    background: #2E2A2B;
+    padding: 0px 5px 5px 5px;
+}
+
+.highlight-body h1 {
+    color: #EA2127;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
 }
 
 /* Event styles */

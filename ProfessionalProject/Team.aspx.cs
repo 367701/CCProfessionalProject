@@ -15,11 +15,64 @@ namespace ProfessionalProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            LoadTeam("");
+        }
+
+        protected void Overwatch_ServerClick(object sender, EventArgs e)
+        {
+            EntireTeam.Attributes["class"] = "";
+            OverwatchTeam.Attributes["class"] = "active";
+            RocketLeagueTeam.Attributes["class"] = "";
+            lolTeam.Attributes["class"] = "";
+
+            LoadTeam("Overwatch");
+        }
+
+        protected void RocketLeague_ServerClick(object sender, EventArgs e)
+        {
+            EntireTeam.Attributes["class"] = "";
+            OverwatchTeam.Attributes["class"] = "";
+            RocketLeagueTeam.Attributes["class"] = "active";
+            lolTeam.Attributes["class"] = "";
+
+            LoadTeam("Rocket League");
+        }
+
+        protected void LolTeam_ServerClick(object sender, EventArgs e)
+        {
+            EntireTeam.Attributes["class"] = "";
+            OverwatchTeam.Attributes["class"] = "";
+            RocketLeagueTeam.Attributes["class"] = "";
+            lolTeam.Attributes["class"] = "active";
+
+            LoadTeam("League Of Legends");
+        }
+
+        protected void EntireTeam_ServerClick(object sender, EventArgs e)
+        {
+            EntireTeam.Attributes["class"] = "active";
+            OverwatchTeam.Attributes["class"] = "";
+            RocketLeagueTeam.Attributes["class"] = "";
+            lolTeam.Attributes["class"] = "";
+
+            LoadTeam("");
+        }
+
+        private void LoadTeam(string game)
+        {
             SqlConnection con = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+
+            string where = "";
+            content = "";
+
+            if(game != "")
+            {
+                where = " WHERE Game = '" + game + "'";
+            }
 
             con.Open();
 
-            using (SqlCommand cmd = new SqlCommand("SELECT * FROM Team", con))
+            using (SqlCommand cmd = new SqlCommand("SELECT * FROM Team" + where, con))
             {
                 using (SqlDataReader sdr = cmd.ExecuteReader())
                 {

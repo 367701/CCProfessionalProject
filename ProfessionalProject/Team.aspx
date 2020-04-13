@@ -10,10 +10,10 @@
             <div class="col-md-6">
                 <div class="team-nav">
                     <ul>
-                        <li><a href="#" class="active"><img src="Images/logo.png" /><br />Full Team</a></li>
-                        <li><a href="#"><img src="Images/overwatch.png" /><br />Overwatch</a></li>
-                        <li><a href="#"><img src="Images/rocket-league.png" /><br />Rocket League</a></li>
-                        <li><a href="#"><img src="Images/lol.png" /><br />League Of Legends</a></li>
+                        <li><a href="#" id="EntireTeam" runat="server" onserverclick="EntireTeam_ServerClick" class="active"><img src="Images/logo.png" /><br />Full Team</a></li>
+                        <li><a href="#" id="OverwatchTeam" runat="server" onserverclick="Overwatch_ServerClick"><img src="Images/overwatch.png" /><br />Overwatch</a></li>
+                        <li><a href="#" id="RocketLeagueTeam" runat="server" onserverclick="RocketLeague_ServerClick"><img src="Images/rocket-league.png" /><br />Rocket League</a></li>
+                        <li><a href="#" id="lolTeam" runat="server" onserverclick="LolTeam_ServerClick"><img src="Images/lol.png" /><br />League Of Legends</a></li>
                     </ul>
                 </div>
             </div>

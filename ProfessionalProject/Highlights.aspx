@@ -7,33 +7,8 @@
         <div class="col-md-2">
 
         </div>
-        <div class="col-md-8">
-             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                 <div class="highlight-body">
-
-                 </div>
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
+        <div class="col-md-8 gallery_container">
+             <%=content %>
         </div>
         <div class="col-md-2">
 
