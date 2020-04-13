@@ -8,16 +8,7 @@
 
             </div>
             <div class="col-md-8">
-                <div class="event-box">
-                    <p class="event-header">Test</p>
-                    <p class="event-date"><span>Date: </span>03/04/2020 15:00 - 16:30</p>
-                    <p class="event-description"><span>Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper libero sit amet posuere fermentum. Vestibulum vel mauris erat. Proin pretium nec leo faucibus porttitor. Proin ut varius orci, et.</p>
-                </div>
-                <div class="event-box">
-                    <p class="event-header">Test</p>
-                    <p class="event-date"><span>Date: </span>03/04/2020 15:00 - 16:30</p>
-                    <p class="event-description"><span>Description: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper libero sit amet posuere fermentum. Vestibulum vel mauris erat. Proin pretium nec leo faucibus porttitor. Proin ut varius orci, et.</p>
-                </div>
+                <%=content %>
             </div>
             <div class="col-md-2">
 

@@ -107,6 +107,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Apply.aspx" />
+    <Content Include="App_Data\CCES.mdf" />
+    <Content Include="App_Data\CCES_log.ldf">
+      <DependentUpon>CCES.mdf</DependentUpon>
+    </Content>
     <Content Include="Highlights.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -248,9 +252,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
