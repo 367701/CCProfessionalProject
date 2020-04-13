@@ -10,60 +10,51 @@
 namespace ProfessionalProject {
     
     
-    public partial class SiteMaster {
+    public partial class Profile {
         
         /// <summary>
-        /// LoginButton control.
+        /// Fullname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LoginButton;
+        protected global::System.Web.UI.WebControls.TextBox Fullname;
         
         /// <summary>
-        /// UserDropdown control.
+        /// IGN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserDropdown;
+        protected global::System.Web.UI.WebControls.TextBox IGN;
         
         /// <summary>
-        /// ViewProfile control.
+        /// Game control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ViewProfile;
+        protected global::System.Web.UI.WebControls.DropDownList Game;
         
         /// <summary>
-        /// AdministratorPanel control.
+        /// Biography control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl AdministratorPanel;
+        protected global::System.Web.UI.WebControls.TextBox Biography;
         
         /// <summary>
-        /// Logout control.
+        /// Message control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Logout;
-        
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Message;
     }
 }

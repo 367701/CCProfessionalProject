@@ -45,9 +45,5 @@
 
         </div>
         </div>
-        <hr />
-        <footer>
-            <p style="color: white;">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-        </footer>
     </div>
 </asp:Content>

@@ -60,14 +60,14 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!--<li><a href="#">Register</a></li>-->
-                        <li><a href="./Login">Login</a></li>
-                        <li class="dropdown hidden">
+                        <li runat="server" id="LoginButton"><a href="./Login">Login</a></li>
+                        <li runat="server" id="UserDropdown" class="dropdown hidden">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                            <li><a href="#">View Profile</a></li>
-                            <li><a href="#">Settings</a></li>
+                            <li runat="server" id="ViewProfile"><a href="#">View Profile</a></li>
+                            <li runat="server" id="AdministratorPanel" class="hidden"><a href="#">Administrator Panel</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a runat="server" id="Logout" onserverclick="Logout_ServerClick" href="#">Logout</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -195,6 +195,9 @@ textarea {
     margin-bottom: 33px;
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background: transparent !important;
+}
 /*  LOGIN */
 .login-form .form-control {
     min-height: 41px;
@@ -204,6 +207,10 @@ textarea {
     width: 100%;
     color: white;
 }
+
+    .login-form .form-control option {
+        background: #352F31 !important;
+    }
 
 .login-form .form-control:focus {
     border-color: #EA2127;
@@ -220,7 +227,7 @@ textarea {
 .login-form {
     width: 100%;
     margin: 0 auto;
-    padding: 100px 0 30px;
+    padding: 65px 0 30px;
 }
 
     .login-form .box {
