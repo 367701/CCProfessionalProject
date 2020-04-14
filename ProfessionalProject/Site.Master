@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %></title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -65,7 +65,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                             <li runat="server" id="ViewProfile"><a href="#">View Profile</a></li>
-                            <li runat="server" id="AdministratorPanel" class="hidden"><a href="#">Administrator Panel</a></li>
+                            <li runat="server" id="AdministratorPanel" class="hidden"><a href="Administration">Administrator Panel</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a runat="server" id="Logout" onserverclick="Logout_ServerClick" href="#">Logout</a></li>
                             </ul>
